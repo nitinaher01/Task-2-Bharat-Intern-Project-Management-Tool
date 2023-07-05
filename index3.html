@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Management Tool</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <h1>Project Management Tool</h1>
+
+    <div class="section">
+        <h2>Users</h2>
+        <ul id="userList" class="userList"></ul>
+        <div class="addUserForm">
+            <input type="text" id="userNameInput" class="userNameInput" placeholder="Enter user name">
+            <button id="addUserBtn" class="addUserBtn">Add User</button>
+            <button id="deleteUserBtn" class="addUserBtn">Delete User</button>
+        </div>
+    </div>
+
+    <div class="communication">
+        <h2>Chat Box</h2>
+        <div class="messageContainer">
+            <ul id="messageList" class="messageList"></ul>
+        </div>
+        <div>
+            <select id="userSelect" class="userSelect"></select>
+            <input type="text" id="messageInput" class="messageInput" placeholder="Type a message">
+            <button id="sendMessageBtn" class="sendMessageBtn">Send</button>
+        </div>
+    </div>
+
+    <div class="tasks">
+        <h2>Tasks</h2>
+        <div class="taskContainer">
+            <ul id="taskList" class="taskList"></ul>
+        </div>
+        <div>
+            <input type="text" id="taskInput" class="taskInput" placeholder="Enter task description">
+            <select id="assigneeSelect" class="assigneeSelect">
+                <option value="">Select assignee</option>
+            </select>
+            <button id="addTaskBtn" class="addTaskBtn">Add Task</button>
+        </div>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>
